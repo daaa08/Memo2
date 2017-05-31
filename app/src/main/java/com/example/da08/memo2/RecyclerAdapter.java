@@ -2,6 +2,7 @@ package com.example.da08.memo2;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +39,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
         Memo memo = datas.get(position);
         // 홀더에 그 값을 셋팅한다
         holder.setTitle(memo.getContent());
+        Log.d("TAG","================================="+memo.getContent());
         holder.setDate(memo.getDate());
+        Log.d("TAG","================================="+memo.getDate());
         holder.setDocumentid(memo.getId());
     }
 

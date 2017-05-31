@@ -83,7 +83,8 @@ public class FileUtil {
             // 2 텍스트 파일을 읽기 위한 리더 계열의 버퍼에 담고
             BufferedReader br = new BufferedReader(isr);
             // 3 한줄을 읽은 후 리저트에 저장
-            String oneLine = br.readLine();
+            result = br.readLine();
+//            String oneLine = br.readLine();
             // 5 스트림을 닫는다
             fis.close();
         }catch (Exception e){
